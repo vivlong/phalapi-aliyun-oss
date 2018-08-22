@@ -1,5 +1,5 @@
 {
-    "name": "ismart/aliyun-oss",
+    "name": "vivlong/aliyun-oss",
     "description": "PhalApi 2.x 扩展类库：基于Aliyun的OSS扩展",
     "type": "library",
     "keywords": [
