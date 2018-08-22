@@ -5,10 +5,12 @@ return array(
      * 相关配置
      */
     'AliyunOss' =>  array(
-        'access_key'    => '<yourAccessKeyId>',
-        'secret_key'    => '<yourAccessKeySecret>',
-        'bucket'        => '<yourBucketName>',
-        'endpoint'      => 'http://oss-cn-hangzhou.aliyuncs.com',
-        'useCNAME'      => false,
+        'accessKeyId'       => '<yourAccessKeyId>',
+        'accessKeySecret'   => '<yourAccessKeySecret>',
+        'bucket'            => '<yourBucketName>',
+        'endpoint'          => 'http://oss-cn-hangzhou.aliyuncs.com',
+        'isCName'           => false,
+        'securityToken'     => null,
+        'requestProxy'      => null,
     ),
 );
