@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "aliyuncs/oss-sdk-php": "dev-master"
+        "vivlong/phalapi-aliyun-oss": "dev-master"
     },
     "autoload": {
         "psr-4": {
