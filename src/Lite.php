@@ -39,14 +39,14 @@ class Lite {
         return $this->config;
     }
 
-    public function uploadFile($bucket, $object, $filePath)
+    public function uploadFile($bucket, $object, $filePath, $options = null)
     {
         if (!file_exists($filePath)) {
             \PhalApi\DI()->logger->error('AliyunOss \ file not exists', $filePath);
             return false;
         }
         try{
-            $res = $this->client->uploadFile($bucket, $object, $filePath);
+            $res = $this->client->uploadFile($bucket, $object, $filePath, $options);
             return $res;
         } catch(OssException $e) {
             \PhalApi\DI()->logger->error('AliyunOss \ uploadFile', $e->getMessage());
