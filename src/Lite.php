@@ -15,7 +15,7 @@ class Lite
     {
         $di = \PhalApi\DI();
         $this->config = $config;
-        if ($this->config === null) {
+        if (is_null($this->config)) {
             $this->config = $di->config->get('app.AliyunOss');
         }
         $accessKeyId = $this->config['accessKeyId'];
